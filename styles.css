@@ -1,3 +1,4 @@
+/* Homepage START */
 :root {
     --main-bg-color: #ddd;
     --accent-color1: #3b144b;
@@ -13,20 +14,88 @@
     border: 0;
 }
 
-body {
+#home_body {
     background-color: var(--main-bg-color);
 }
 
-header, footer {
+.home_header, #footer {
     background-color: var(--accent-color1);
     color: var(--header-footer-text-color);
     width: auto;
     height: 6em;
 }
 
-footer {
+#footer {
     margin-top: auto;
     text-align: center;
     text-transform: uppercase;
 }
 
+/* Homepage END */
+
+/* Photo Gallery START */
+
+#photo_body {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      "1 2"
+      "b c"
+      "d d";
+    row-gap: 20px;
+    column-gap: 20px;
+    margin: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.photo_top_h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.photo_bts_h1 {
+    display: grid;
+    background: blue;
+    grid-area: 1 / 2 / b / 2;
+    text-align: center;
+    margin-top: 5%;
+}
+  
+.photo_nav {
+    display: grid;
+    grid-area: b / 1 / c / 1;
+    text-align: center;
+}
+
+.img_card__container {
+    display: grid;
+    grid-area: b / 2 / auto / span 4;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    column-gap: 10px;
+    margin: 5%;
+}
+
+.img_card {
+    width: 300px;
+    box-shadow: grey 4px 4px 10px 2px;
+    border-radius: 3px;
+}
+
+.img_card__img {
+
+    border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  padding-top: 5%;
+}
+
+a {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+  
+
+  
