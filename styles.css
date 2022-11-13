@@ -38,7 +38,7 @@
     grid-area: 1 / c / auto / span 4;
   }
   
-  .header__title {
+  .photo_header__title {
     font-size: 3rem;
     margin: 0;
     font-family: 'Pacifico', cursive;
