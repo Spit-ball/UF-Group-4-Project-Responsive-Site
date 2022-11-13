@@ -22,6 +22,14 @@
     border: 0;
 }
 
+/* HOME PAGE */
+
+.index__hero {
+    max-width: 100%;
+    height: auto;
+}
+
+
 /* ABOUT PAGE */
 
 .header__logo img {
@@ -42,7 +50,7 @@
     background-color: var(--accent-color1);
 }
 
-body {
+.about__body {
     background-color: var(--main-bg-color);
     font-family: var(--main-font-family);
 }
@@ -52,7 +60,7 @@ body {
     grid-template-areas:
     'heading heading heading'
     'text1   text1   text1'
-    'text2   image1  image1'
+    'text2   text2   image1'
     'image2  text3   text3';
     grid-row-gap: 24px;
     grid-column-gap: 24px;
@@ -67,48 +75,68 @@ body {
 
 .about__text-paragraph-one {
     grid-area: text1;
+    font-size: 16px;
 }
 
 .about__text-paragraph-two {
     grid-area: text2;
+    font-size: 16px;
 }
 
 .about__text-paragraph-three {
     grid-area: text3;
+    font-size: 16px;
 }
 
 .about__image1 {
     grid-area: image1;
     height: 200px;
+    justify-self: center;
 }
 
 .about__image2 {
     grid-area: image2;
     height: 200px;
-    justify-items: center;
+    justify-self: center;
 
 }
 
-header, footer {
+.about__header, .about__footer {
     background-color: var(--accent-color1);
     color: var(--header-footer-text-color);
     width: auto;
     height: 12em;
 }
 
-footer {
+.about__footer {
     margin-top: auto;
     text-align: center;
     text-transform: uppercase;
-    height: 6em
+    height: 6em;
+    align-items: center;
 }
 
 @media screen and (max-width: 1100px) {
-    header {
-        max-height: ;
+    .about__text {
+        display: grid;
+        grid-template-areas:
+        'logo'
+        'heading'
+        'text1'
+        'image1'
+        'text2'
+        'image2'
+        'text3';
+        grid-row-gap: 24px;
+        grid-column-gap: 24px;
+        margin: 24px;
+        justify-content: center;
+        align-items: center;
     }
 
-
+    .header__container {
+        display: grid;
+        grid-template-columns: 400px repeat(3, 1fr);
 }
 
 /* PHOTO PAGE */
@@ -223,7 +251,6 @@ footer {
     align-items: center;
     justify-items: center;
     grid-area: d / span 4;
-}
 
 @media screen and (max-width: 1100px) {
     body {
