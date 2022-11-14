@@ -251,6 +251,7 @@
     align-items: center;
     justify-items: center;
     grid-area: d / span 4;
+}
 
 @media screen and (max-width: 1100px) {
     body {
@@ -296,3 +297,4 @@
         grid-area: d;
         }
     }
+}
