@@ -29,6 +29,47 @@
     height: auto;
 }
 
+.header__link:hover {
+    color: var(--accent-color2);
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 200%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 0%;
+    }
+}
+
+.header__logo:hover {
+    opacity:50%;
+    transition: opacity 0.5s;
+}
+
+.about__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.index__twitter-icon {
+    width: 50px;
+}
+
+.index__facebook-icon {
+    width: 50px;
+}
+
+.index__instagram-icon {
+    width: 50px;
+}
+
 
 /* ABOUT PAGE */
 
